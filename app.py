@@ -13,7 +13,7 @@ logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)
 
 TOKEN = "2136700839:AAEAZGio4CW1WslG6OHvJlSFQZt4SSe8Qvc"
-MAX_RETRIES = 5
+MAX_RETRIES = 10
 MAX_RESULTS = 1
 
 bot = AsyncTeleBot(TOKEN, parse_mode=None)
