@@ -86,7 +86,7 @@ async def handle_quota(message):
 @bot.message_handler(commands=['start', 'help'])
 @bot.message_handler(regexp="аниме")
 async def handle_start_help(message):
-    await bot.send_message(message.chat.id, 'Привет! \nОтправь мне скриншот из аниме 🤩')
+    await bot.send_message(message.chat.id, 'Привет 👋\nОтправь мне любой кадр из аниме 🤩')
 
 
 @bot.message_handler(content_types=['photo'])
@@ -113,7 +113,7 @@ async def send_welcome(message):
 
 @bot.message_handler(func=lambda message: True)
 async def echo_message(message):
-    await bot.reply_to(message, 'Это не скриншот! Отправь мне скриншот')
+    await bot.reply_to(message, 'Это не скриншот! Отправь мне изображение 🖼')
 
 
 asyncio.run(bot.polling())
