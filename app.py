@@ -1,8 +1,13 @@
 import asyncio
 import json
+import os
 import logging
 import requests
 import urllib.parse
+
+from dotenv import load_dotenv
+load_dotenv()
+
 
 import telebot
 from telebot import types
@@ -12,7 +17,7 @@ from telebot.async_telebot import AsyncTeleBot
 logger = telebot.logger
 telebot.logger.setLevel(logging.DEBUG)
 
-TOKEN = "2136700839:AAEAZGio4CW1WslG6OHvJlSFQZt4SSe8Qvc"
+TOKEN = os.environ['TOKEN']
 MAX_RETRIES = 5
 MAX_RESULTS = 1
 
