@@ -5,9 +5,8 @@ import logging
 import requests
 import urllib.parse
 
-from dotenv import load_dotenv
-load_dotenv()
-
+# from dotenv import load_dotenv
+# load_dotenv()
 
 import telebot
 from telebot import types
